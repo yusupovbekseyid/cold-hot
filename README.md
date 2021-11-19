@@ -51,7 +51,7 @@
 
 1. Установить composer, если он не установлен;
 2. Перейти в каталог, в который вы будете клонировать проект;
-3. Выполнить команду ;
+3. Выполнить команду `composer create-project bekseyid/cold-hot`;
 4. Перейти в каталог bin;
 5. Запустить файл cold-hot.bat.
 
@@ -59,4 +59,4 @@
 
 ## Ссылки
 
-Packagist: 
+Packagist: <https://packagist.org/packages/bekseyid/cold-hot>
