@@ -1,7 +1,8 @@
 {
-    "name": "bekseyid/cold-hot",
+    "name": "maria_brash/cold-hot",
     "require": {
-        "wp-cli/php-cli-tools": "^0.11.13"
+        "wp-cli/php-cli-tools": "^0.11.13",
+        "gabordemooij/redbean": "dev-master"
     },
 	"type": "project",
 	"bin": [

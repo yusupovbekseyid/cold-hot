@@ -59,11 +59,10 @@ function startGame()
     showGame();
     $number = 0;
     $currentNumber = random_int(100, 999);
-    $db = insertDB($currentNumber);
+    $id = insertDB($currentNumber);
     $turn = 0;
 
     $currentNumber = str_split($currentNumber);
-    $id = $db->querySingle("SELECT gameId FROM games ORDER BY gameId DESC LIMIT 1");
     while ($number != $currentNumber) {
         $number = readline("Введите трехзначное число : ");
         if (is_numeric($number)) {
