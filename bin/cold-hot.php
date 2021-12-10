@@ -10,10 +10,13 @@ if (file_exists($github)) {
 }
 
 use function yusupovbekseyid\cold_hot\Controller\key;
+
 if (isset($argv[1])) {
-    $key = $argv[1];
-    key($key);
+    if ($argv[1] === "-r" || $argv[1] === "--replay") {
+        key($argv[1], $argv[2]);
+    } else {
+        key($argv[1], null);
+    }
 } else {
-    $key = "-n";
-    key($key);
+    key("-n", null);
 }
